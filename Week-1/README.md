@@ -1,4 +1,18 @@
-A browser is a software application used to locate, retrieve and display content on the World Wide Web, including Web pages, images, video and other files. As a client/server model, the browser is the client run on a computer that contacts the Web server and requests information. The Web server sends the information back to the Web browser which displays the results on the computer or other Internet-enabled device that supports a browser.
+#### A browser is a software application used to locate, retrieve and display content on the World Wide Web, including Web pages, images, video and other files. As a client/server model, the browser is the client run on a computer that contacts the Web server and requests information. The Web server sends the information back to the Web browser which displays the results on the computer or other 
+Internet-enabled device that supports a browser.
+
+
+
+### When user enters URL into browser it goes through series of steps:
+
+### 1.You enter a URL into a web browser
+### 2.The browser looks up the IP address for the domain name via DNS
+### 3.The browser sends a HTTP request to the server
+### 4.The server sends back a HTTP response
+### 5.The browser begins rendering the HTML
+### 6.The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.
+### 7.Once the page is loaded, the browser sends further async requests as needed.
+
 
  # Components of web browser
 
@@ -18,19 +32,6 @@ The browser engine works as a bridge between the User interface and the renderin
 * Chrome & Opera 15+: Blink
 * Chrome (iPhone) & Safari: Webkit
 
-## 4.Networking:
- Component of the browser which retrieves the URLs using the common internet protocols of HTTP or FTP. The networking component handles all aspects of Internet communication and security. The network component may implement a cache of retrieved documents in order to reduce network traffic.
-
-## 5.JavaScript Interpreter: 
-It is the component of the browser which interprets and executes the javascript code embedded in a website. The interpreted results are sent to the rendering engine for display. If the script is external then first the resource is fetched from the network. Parser keeps on hold until the script is executed.
-
-## 6.UI Backend: 
-UI backend is used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. It underneath uses operating system user interface methods.
-
-## 7.Data Persistence/Storage: 
-This is a persistence layer. Browsers support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem. It is a small database created on the local drive of the computer where the browser is installed. It manages user data such as cache, cookies, bookmarks and preferences.
-
-## Rendering engine
 In order to render content the browser has to go through a series of steps:
 1. Document Object Model(DOM)
 2. CSS object model(CSSOM)
@@ -68,5 +69,19 @@ This stage is where the browser calculates the size and position of each visible
 
 ### 5. Paint
 When we get to the paint stage, the browser has to pick up the layout result, and paint the pixels to the screen, beware in this stage that not all styles have the same paint times, also combinations of styles can have a greater paint time than the sum of their parts. For an instance mixing a border-radius with a box-shadow, can triple the paint time of an element instead of using just one of the latter.
+
+## 4.Networking:
+ Component of the browser which retrieves the URLs using the common internet protocols of HTTP or FTP. The networking component handles all aspects of Internet communication and security. The network component may implement a cache of retrieved documents in order to reduce network traffic.
+
+## 5.JavaScript Interpreter: 
+It is the component of the browser which interprets and executes the javascript code embedded in a website. The interpreted results are sent to the rendering engine for display. If the script is external then first the resource is fetched from the network. Parser keeps on hold until the script is executed.
+
+## 6.UI Backend: 
+UI backend is used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. It underneath uses operating system user interface methods.
+
+## 7.Data Persistence/Storage: 
+This is a persistence layer. Browsers support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem. It is a small database created on the local drive of the computer where the browser is installed. It manages user data such as cache, cookies, bookmarks and preferences.
+
+
 
 
