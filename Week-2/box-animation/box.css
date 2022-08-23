@@ -27,3 +27,11 @@
 .green {
   background-color: green;
 }
+
+.text{
+  font-size: 2em;
+  position: absolute;
+  top: 58px;
+  right: 694px;
+  z-index: -1;
+}
