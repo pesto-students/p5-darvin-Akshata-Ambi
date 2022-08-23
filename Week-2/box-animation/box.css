@@ -1,0 +1,29 @@
+.mainDiv {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+}
+
+.red,
+.blue,
+.yellow,
+.green {
+  height: 100px;
+  width: 100px;
+  transition: transform 0.8s ease-in-out;
+}
+
+.red {
+ background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
