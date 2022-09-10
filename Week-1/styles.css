@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.sidebar {
+  height: 90vh;
+  width: 4vw;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  align-items: center;
+  position: fixed;
+}
+
+.las.hamburger {
+  margin-top: 30px;
+}
+
+.lab.cloud {
+  margin-bottom: 40px;
+}
+
+.songContainer {
+    height: 42%;
+    width: 100%;
+    background-color: #424242;
+    position: absolute;
+    top: 2px;
+    z-index: -1;
+}
+.cattyImage {
+  height: 17em;
+  margin: 35px 0 35px 110px;
+}
+.songsDetails {
+  color: #ffffff;
+  position: absolute;
+  top: 33px;
+  left: 420px;
+}
+.headerText {
+  font-size: 24px;
+  margin-right: 5px;
+}
+.artistName {
+  margin-top: 20px;
+}
+
+.doMore {
+  display: flex;
+  position: relative;
+  bottom: -170px;
+  left: -2px;
+}
+
+.doMoreText {
+  margin: 0 10px 0 5px;
+  font-size: 14px;
+}
+
+.mainContent {
+    position: absolute;
+    bottom: 273px;
+    left: 90px;
+    width: 93.5%;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+    font-size: 14px;
+}
+tr{
+    height: 43px;
+}
+tr:nth-child(even) {
+    background-color: #eeeeee;
+  }
+td{
+    width: 27%;
+}
+ td:first-child {
+    padding-left: 10px;
+}
+td:nth-child(3) {
+    width: 15%;
+}
+td:last-child{
+    color: blue;
+}
+
+td p{
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.songContainerFooter{
+    color: white;
+    height: 12vh;
+    width: 100%;
+    background-color: #1565c0;
+    position: absolute;
+    bottom: 0;
+}
+.cattyImageFooter{
+    height: 5em;
+    margin:10px 10px 10px 5px
+}
+.footerText{
+    position: absolute;
+    bottom: 22px;
+    font-size: 12px;
+    left: 95px;
+    line-height: 25px;
+}
+.footerIcons{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    position: relative;
+    float: right;
+    bottom: 60px;
+    left: -8px;
+}
