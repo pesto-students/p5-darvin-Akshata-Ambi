@@ -35,3 +35,36 @@
   right: 694px;
   z-index: -1;
 }
+
+.mainDiv:hover .red{
+  transform: rotateZ(90deg);
+  transform-origin: top left;
+}
+.mainDiv:not(:hover) .red{
+    transform: rotateZ(0deg);
+    transform-origin: top left;
+  }
+.mainDiv:hover .yellow{
+    transform: rotateZ(-90deg);
+    transform-origin: top right;
+}
+.mainDiv:not(:hover) .yellow{
+    transform: rotateZ(0deg);
+    transform-origin: top right;
+}
+.mainDiv:hover .blue{
+    transform: rotateZ(-90deg);
+    transform-origin: bottom left;
+}
+.mainDiv:not(:hover) .blue{
+    transform: rotateZ(0deg);
+    transform-origin: bottom left;
+}
+.mainDiv:hover .green {
+    transform: rotateZ(90deg);
+    transform-origin: bottom right;
+}
+.mainDiv:not(:hover) .green {
+    transform: rotateZ(0deg);
+    transform-origin: bottom right;
+}
