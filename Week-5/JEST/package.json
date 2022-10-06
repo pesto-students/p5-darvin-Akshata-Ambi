@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "jest": "^29.0.3",
+    "save-dev": "^0.0.1-security"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest-html-reporter": "^3.7.0"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  }
+}
